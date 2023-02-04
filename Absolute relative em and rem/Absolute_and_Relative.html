@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units of measurement </title>
+    <style>  
+               /* For Child selctor we use ul > li{}   
+               To make the <li> tags bolder we use this,
+               here <li>  is the direct-child of <ul>, or <ul> is the parent of <li>  */
+        ul > li{
+            font-weight: bold;
+        }
+            
+        /* For Descendant selctor we use ul p{}   
+         by impleminting this in descendant ones, Para tags  <p></p> will remain in normal font-weight. 
+         <p> is the Grand-chlid of <ul>   */
+        ul p{
+            font-weight: normal;
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Units of measurement</h1>
+    <ul>
+        <li>Relative Units
+            <p>Based on size of something. Eg:size of parent or default text size.</p>
+            <p>Exg: px,em, rem, vh, vm, vw </p>
+        </li>
+        <li>Absolute Units
+            <p>Real world equivalent or predefined.</p>
+            <p>Exg: px, pt, mm, cm, in</p>
+        </li>
+    </ul>
+</body>
+</html>
