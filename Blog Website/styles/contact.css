@@ -1,0 +1,170 @@
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: color #f9f9f9;;
+    
+}
+
+header{
+    background-color: rgb(230, 222, 222);
+    padding: 10px;
+}
+
+nav{
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    text-align: center;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: #333333;
+}
+
+nav h1{
+    text-transform: uppercase;
+    line-height: 1em;
+}
+
+/* contact style  */
+.contacth h2{
+    text-align: center;
+    margin: 35px 0px;
+}
+/* end contact style  */
+
+
+.formd{
+    background-color: rgb(151, 187, 196);
+    margin: 30px 60px;
+    padding: 0px 20px 20px 20px;
+    border-radius: 8px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 21px 29px 29px -2px; 
+}
+.details{
+    text-align: center;
+    margin: 20px 0px;
+    padding: 20px 0px;
+}
+
+.mainform{
+    margin: 6px 8px;
+  
+}
+
+.form {
+    padding: 20px;
+}
+
+.form label{
+    margin: 10px 0px;
+    color: rgb(34, 39, 39);
+}
+
+
+input {
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    border: none;
+    padding: 10px;
+    outline: none;
+}
+
+#male, #female{
+    width: 5%;
+    height: 1%;
+}
+
+
+#information{
+    border-radius: 10px;
+    width: 101%;
+    outline: none;
+    border:none;
+    padding: 1px 2px;
+}
+
+.mainform > select{
+    margin: 0px 10px;
+    padding: 0px 10px;
+    border: none;
+    outline: none;
+}
+.button{
+    padding: 15px 17px;
+    margin-top: 20px;
+    width: 10%;
+    border-radius: 10px;
+    height: 2%;
+    text-align: center;
+}
+
+
+.button:hover{
+    background-color: rgba(64, 211, 64, 0.87);
+    transition: ease-out 0.33s;
+    color: rgb(242, 255, 239);
+
+}
+
+
+/* footer  start*/
+footer{
+    background-color:#f5ececd8;
+    padding: 5px 0px;
+}
+
+div hr{
+    background-color:  rgb(161, 233, 113);
+    margin: 30px 0px;
+}
+
+.mymap{
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+    align-items: center;
+}
+
+.fcontainer{
+    padding: 15px 0px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+footer .ftitle{
+    letter-spacing: 0.095rem;
+    margin: 16px 32px;
+    padding: 13px 68px;
+    font-weight: bold;
+}
+
+
+footer  .base{
+    list-style-type: none;
+    align-items: center;
+    padding: 0px 100px;   
+}
+
+footer ul a{
+    text-decoration: none;
+    color: #333333;
+}
+
+footer #sep{
+    list-style-type: none;
+    align-items: center;
+    margin: 110px 38px;
+    padding: 0px 0px;
+    font-weight: 200;
+}
+
+/* footer ends  */
