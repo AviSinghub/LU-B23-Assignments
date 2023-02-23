@@ -1,0 +1,19 @@
+.navbar >.container-fluid{
+    margin-left: 5px;
+    margin-right: 20px;
+} 
+
+/* for image setup */
+.home .container-fluid .row img{
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+
+    
+    
