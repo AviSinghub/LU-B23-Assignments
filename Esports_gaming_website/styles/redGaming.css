@@ -1,0 +1,486 @@
+body{
+    /* margin:0;
+    padding:0; */
+    background:black;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav .game-name{
+    color: rgb(237, 243, 243);
+    font-weight: lighter;
+}
+
+/* login start  */
+
+
+div .navbar-text{
+    color: #2cb876;
+    text-decoration: none;
+}
+
+div .navbar-text:hover{
+    color: #05f385;
+    text-decoration: underline;
+}
+
+.android{
+    font-weight: bolder;
+    background-image: linear-gradient(30deg, rgb(150, 144, 137),rgb(163, 233, 92), rgb(248, 248, 248));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.video-fluid{
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    object-fit: cover;
+    position:absolute;
+    top:0;
+    left:0;
+}
+section .banner-ul{
+    padding-inline-start: 46px;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 16px;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+section .banner-container{
+    cursor: pointer;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #191129;
+}
+
+
+.banner-title{
+    text-transform: uppercase;
+    /* font-size: inherit; */
+    font-weight: inherit;
+    color: rgb(202, 240, 240);
+}
+ 
+.wallet-btn{
+    display: flex;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: italic;
+    background-color: white;
+    color: #070707;
+    font-size: 15px;
+    border: unset;
+    /* box-shadow: 5px -3px 11px #c326e2, -3px 5px 5px #05f385; */
+    box-shadow: 2px -3px 14px #c326e2, -2px 4px 5px #05f385;
+
+}
+
+
+/* Tournament card info  */
+.tournament_tag-list{
+    border: 1px solid #333;
+    border-radius: 10px;
+    font-size: small;
+    margin-bottom: 0;
+    list-style-type: none;
+    display: inline-flex;
+}
+
+.pl-0{
+    padding-left: 0 !important;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+.medium_font{
+    font-size: 14px;
+    /* padding-left: 12px; */
+}
+
+.color-white{
+    color: white;
+}
+
+.small_font{
+    font-size: 10.5px;
+    margin-top: 3px;
+}
+
+.calender{
+    margin-right: 6px;
+}
+
+.tournament-registeration{
+    border-radius: 10px 10px 0px 0px;
+}
+
+.featured-tournament{
+    z-index: -1;
+    color: white;
+    top: 3px;
+    left: 140px;
+    position: absolute;
+    max-width: 113px;
+    font-size: 14px ;
+    margin: 0px 5px;
+    /* color: #f8a81c; */
+    clip-path: polygon(0 0,100% 0%, 100% 100%, 22% 99%);
+}
+
+.reg-color{
+    border-radius: 8px;
+    background-color: #05f385;
+    /* background-color: #04e97e; */
+    /* background-color: #aee66d; */
+    color: black;
+    border: none;
+    border-color: #04e97e;
+}
+ .outer-card{
+    cursor: pointer;
+    /* background-color: var(--bg-cardbody); */
+}
+
+/* .allcards{
+    background-color: var(--bg-cardbody);
+} */
+
+div .lastview{
+    display: block;
+    background-color: #05f385;
+    text-decoration: unset;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    /* background-color: transparent; */
+    -webkit-transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease;
+    border-radius: 5px;
+}
+
+.number_list{ 
+    top: 2%;
+    left: 2%;
+    margin: 6px;
+    padding: 0 12px 0 0 ;
+    position: inherit;
+    /* margin: 6px; */
+    font-size: 5.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* letter-spacing: 14px; */
+    font-style: italic;
+    vertical-align: top;
+    float: left;
+    padding-right: 15px;
+    color: #fff;
+    text-shadow: 2px 2px 1px #000;
+}
+
+.game_holder>a{
+    font-size: 1.7em;
+    font-style: italic;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 2rem;
+    color: #fff;
+    text-shadow: 3px 3px 2px #000;
+}
+
+
+.game_holder>a:hover{
+    color: greenyellow;
+    text-decoration: underline;
+}
+
+.main_card{
+    overflow: hidden;
+    /* text-align: center; */
+    background-position: center top;
+    max-width: 720px;
+}
+.card-img{
+    position: relative;
+    border: 10px solid;
+    max-width: 720px;
+    overflow: hidden;
+    height: 100%;
+    margin: 0 auto;
+    opacity: 0.489;
+}
+.game_info_box{
+    /* display: flex; */
+    position: sticky ;
+    top: 70%;
+    margin: 0 16px;
+    float: right;
+    text-align: right;
+    text-overflow: ellipsis;
+}
+.game_stats{
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+    text-overflow: ellipsis;
+    font-style: italic;
+    line-height: 175%;
+    text-shadow: 3px 2px 2px #000;
+}
+div .game_holder{
+    left: 25%;
+    position: relative;
+    margin: 4px;
+}
+
+.game_details{
+    color: whitesmoke;
+    text-shadow: 1px 2px 2px grey;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.game_icons{
+    font-size: 2.5em;
+    color: #04e97e;
+}
+.game_stats_info{
+    color: #af9d9d;
+    font-weight: 600;
+}
+
+div .card{
+    background-color: #191129;
+}
+
+.number_text{
+    font-size: 2.3rem;
+    font-weight: 500;
+    letter-spacing:5px;
+    color: rgb(156, 211, 243);
+    text-shadow: 2px 3px 5px rgb(109, 103, 103);
+}
+
+.gname_text{
+    color: #1d83b3;
+    text-decoration: none;
+}
+
+.gname_text:hover{
+    color: #04e97e;
+    text-shadow:1px 2px 3px #05f385;
+}
+
+.callduty{
+    text-shadow: 1px 1px 1px rgb(192, 191, 191);
+    line-height: 1.5rem;
+}
+
+.readme{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.card-text{
+    font-size: 14px;
+    
+}
+
+.hashtg{
+    display: inline;
+    font-family: 'Eagle Lake', cursive;
+    font-size: 66px;
+    /* color: white; */
+    background-image: linear-gradient(60deg,rgb(196, 108, 0), orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.gfd{
+    display: inline;
+    font-family: 'Maven Pro', sans-serif;
+    padding: 0px;
+    margin: -6px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    /* font-style: italic; */
+    font-size: 35px;
+    color: white;
+    background-image: linear-gradient(90deg, rgb(201, 131, 2),rgb(241, 220, 180), rgb(255, 255, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.goodgold{
+    font-size: 20px;
+    color: #fff;
+}
+
+
+/* Game body style  */
+ /* for card 1 */
+.game-section{
+    border-top: 2px solid rgb(187, 59, 9);
+    border-right: 1px solid rgb(187, 59, 9);
+    border-left: 1px solid rgb(187, 59, 9);
+    border-radius: 40px;
+}
+ 
+#startbtn{
+    font-weight: bold;
+    background-color: transparent;
+    color: #27344e;
+    border: 1.5px solid #5d7199;
+}
+#startbtn:hover{
+    color: #242424;
+    background-color: #05f385;
+    border:1.5px solid #05f385;
+}
+
+.icon{
+    font-size: 2.69em;
+    color: rgb(187, 59, 9);
+}
+
+.activity-name{
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 1.68em;
+    color: rgb(187, 59, 9);
+}
+
+.activity-detail{
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    color: rgb(191, 212, 230);
+}
+/* Card 1 ends  */
+
+/* card 2  */
+
+.game-section2{
+    border-top: 2px solid rgb(12, 198, 211);
+    border-right: 1px solid rgb(12, 198, 211);
+    border-left: 1px solid rgb(12, 198, 211);
+    border-radius: 40px;
+}
+ 
+#startbtn2{
+    font-weight: bold;
+    background-color: transparent;
+    color: #27344e;
+    border: 1.5px solid #5d7199;
+}
+#startbtn2:hover{
+    color: #242424;
+    background-color: #05f385;
+    border:1.5px solid #05f385;
+}
+
+.icon2{
+    font-size: 2.69em;
+    color: rgb(12, 198, 211);
+}
+
+.activity-name2{
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 1.68em;
+    color: rgb(12, 198, 211);
+}
+
+.activity-detail2{
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    color: rgb(191, 212, 230);
+}
+/* card 2 ends */
+
+/* for card 3  */
+.game-section3{
+    border-top: 2px solid rgba(243, 206, 40, 0.945);
+    border-right: 1px solid rgba(243, 206, 40, 0.945);
+    border-left: 1px solid rgba(243, 206, 40, 0.945);
+    border-radius: 40px;
+}
+ 
+#startbtn3{
+    font-weight: bold;
+    background-color: transparent;
+    color: #27344e;
+    border: 1.5px solid #5d7199;
+}
+#startbtn3:hover{
+    color: #242424;
+    background-color: #05f385;
+    border:1.5px solid #05f385;
+}
+
+.icon3{
+    font-size: 2.69em;
+    color: rgba(243, 206, 40, 0.945);
+}
+
+.activity-name3{
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 1.68em;
+    color: rgba(243, 206, 40, 0.945);
+}
+
+.activity-detail3{
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    color: rgb(191, 212, 230);
+}
+/* for card 3 ends */
+.follow{
+    color: #05f385;
+}
+
+.gaurentee{
+    color: #868686;
+}
+
+.payment{
+    color: rgb(209, 208, 208);
+    font-size: 20px;
+}
+
+.fcont{
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: light;
+}
+.about-section{
+    font-weight: 700;
+    color: white;
+    
+}
+.copyrgt{
+    color: #af9d9d;
+}
