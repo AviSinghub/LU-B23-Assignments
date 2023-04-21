@@ -1,7 +1,7 @@
 const password = prompt("Enter your password");
 
 //Password validation program
-if(password.length < 8 || password.length > 20){                        // Regular Exp. for Symbol 
+if(password.length < 8 || password.length > 20){                        // Regular Exp. for length 
     console.log("Password must be between 8 to 20 chars");  
 }else if(!/\W/.test(password)){                                          // Regular Exp. for Symbol 
     console.log("Password must have a symbol."); 
