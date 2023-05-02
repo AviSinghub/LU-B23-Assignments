@@ -1,0 +1,14 @@
+{
+  "name": "first-into-nodejs",
+  "version": "0.0.1",
+  "description": "basic on nodejs",
+  "main": "nodefile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Avinash",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.29.4"
+  }
+}
