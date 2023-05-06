@@ -1,0 +1,19 @@
+{
+  "name": "blog-game-redirecting",
+  "version": "0.0.4",
+  "description": "basic on nodejs",
+  "main": "nodefile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Avinash",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "Blog-game-nodejs"
+  ]
+}
