@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pheixon | <%= title %> </title>
+    <link rel="stylesheet" href="#">
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head> -->
+    <%- include('./partials/header.ejs')%>
+
+<body>
+
+    
+    <!-- <nav>
+        <div class="site-title">
+            <a href="/">Phexion</a>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, fugiat quam sit repudiandae aspernatur earum? Corporis animi ipsa tenetur eos modi debitis at qui voluptates. Error vitae in unde a.</p>
+
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/teams">Teams</a></li>
+                <li><a href="/privacy">Privacy</a></li>
+                <li><a href="/blogs/create">create New Blog</a></li>
+            </ul>
+        </div>
+    </nav> -->
+
+    <%- include('./partials/nav.ejs') %>
+    
+    <div class="blog-content">
+        <p>All Blogs</p>
+        <% if(blogs.length > 0) { %>
+            <% blogs.forEach( blogs => { %>
+                <h3 class="blog-title"> <%= blogs.blogtitle %> </h3>
+                <p class="blog-preview"> <%= blogs.previewtext %> </p> 
+                <p class="blog-body"> <%= blogs.blogcontent %></p>  
+                <p class="blog-author"> <%= blogs.author %></p>
+            <% } ) %> 
+         <% } else { %>
+            <p>There is no blog present. To create one go inside <a href="/blogs/create"></a></p>
+        <% } %>
+    </div>
+
+    <%- include('./partials/footer.ejs')%>
+    
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<html lang="en">
+<!-- <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pheixon | <%= title %> </title>
+</head> -->
+
+<%- include('./partials/header.ejs')%>
+
+<body>
+
+    <!-- <nav>
+        <div class="site-title">
+            <a href="/">Phexion</a>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, fugiat quam sit repudiandae aspernatur earum? Corporis animi ipsa tenetur eos modi debitis at qui voluptates. Error vitae in unde a.</p>
+
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/teams">Teams</a></li>
+                <li><a href="/privacy">Privacy</a></li>
+                <li><a href="/blogs/create">Create New Blog</a></li>
+            </ul>
+        </div>
+    </nav> -->
+    
+    <%- include('./partials/nav.ejs') %>
+
+    <div class="create-blog">
+        <p>Add a New Blog here:</p>
+        <form>
+            <label class="one" for="title">Blog Title</label>
+            <input type="text" name="title" id="title" required> <br>
+
+            <label for="previewtext">Preview text</label>
+            <input type="text" name="previewtext" id="previewtext" required> <br>
+
+            <label for="blogcontent">Blog Content</label>
+            <textarea name="blog-content" id="blogcontent" ></textarea> <br>
+
+            <label for="author">Author</label>
+            <input type="text" name="author" id="author" required> <br> 
+            <button>Submit</button>
+        </form>
+    </div>
+
+
+    
+    <%- include('./partials/footer.ejs')%>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeJS with MongoDB</title>
+    <link rel="stylesheet" href="#">
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>DATABASE</h1>
+    <ul>
+        <li>SQL</li>
+        <li>No SQL</li>
+    </ul>
+
+    <h3>SQL</h3>
+    <ul>
+        <li>Table</li>
+        <li>Rows</li>
+        <li>Columns</li>
+    </ul>
+
+    <h3>No SQL</h3>
+    <ul>
+        <li>Collections</li>
+        <li>Documents</li>
+    </ul>
+
+    <h3>MongoDB</h3>
+    <p> BAsically is a noSQL database</p>
+
+    <h4>Collections</h4>
+    <p>Each Collections is used to store particular type of data</p>
+    <ul>
+        <li>User collection</li>
+        <li>Blog collection</li>
+        <li>Author collection</li>
+    </ul>
+    
+    <h5>Documents</h5>
+    <p>for Record</p>
+
+    <p>Blog documents represents  a single blog</p>
+    <pre>
+        {
+            "id":  " object(6sfse8ewe4k974ash)",
+            "title": " Any title",
+            "preview-text":"you can set preview",
+            "body": "this is body",
+            "author": "name of the author"
+
+        }
+    </pre>
+
+    <h3>Moongoose: Model and schema</h3>
+    <p>ODM LIBRAY: Object Document Mapping Library </p>
+
+    <ul>
+        <li>User model: User.get(), User.searchuserid()</li>
+        <li>Blog model: Blog.create(), Blog.delete()</li>
+    </ul>
+
+    <h3>Schemas and Model</h3>
+    <h4>Schema</h4>
+    <pre>
+        Blog schema:
+        title (string), required
+        preview-text (string), required
+        body (string), required
+
+        User schema:
+        name (string), required
+        age(int),
+        bio(string), required
+        email(string), required
+
+    </pre>
+
+    <h4>Model</h4>
+    <p>Allows  us to communicate with the database collections</p>
+
+    <pre>
+        BLog Model: Blog schema --database  -- blogs collections
+    </pre>
+    
+
+</body>
+</html>

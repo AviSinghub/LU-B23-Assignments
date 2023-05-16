@@ -1,0 +1,60 @@
+body{
+    background-color: crimson;
+}
+
+.create-blog form{
+    max-width: 400px;
+    margin: 0 auto;
+
+}
+
+.create-blog label{
+    display: block;
+    margin-top: 24px;
+}
+
+.create-blog input , .create-blog textarea{
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+textarea{
+    height: 120px;
+}
+
+.create-blog button{
+    margin-top: 25px;
+    background-color: rgb(4, 92, 173);
+    color: rgb(248, 235, 235);
+    padding: 6px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: 1px solid rgb(4, 92, 173);
+    border-radius: 8px;
+}
+
+/* privacy styles */
+.priv{
+    color: rgb(124, 53, 12);
+}
+
+/* label styles  */
+/* label {
+    color: rgb(133, 70, 12);
+    font-size: 1.2em;
+    font-weight: bolder;
+    
+
+}
+input:focus {
+    background-color: rgb(219, 172, 154);
+    transition: all 0.2s ease;
+    border: 1px solid #f1b780;
+    outline: none;
+}
+
+form .one{
+    color: crimson;
+} */
