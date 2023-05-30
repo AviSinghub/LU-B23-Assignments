@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Netflix from './pages/Netflix'
 import Login from './pages/Login'
