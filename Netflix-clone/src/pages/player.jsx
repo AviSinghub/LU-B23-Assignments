@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 import {BsArrowLeft} from 'react-icons/bs';
-import {video} from '../assets/codmobile.mp4'
+import video from '../assets/StrangerThings.mp4'
 
-export default function player() {
+export default function Player(){
     const navigate = useNavigate();
   return (
     <Container>
@@ -19,7 +19,9 @@ export default function player() {
 }
 
 const Container = styled.div`
+height: 100vh;
     .player{
+        position:relative;
         width: 100%;
         height: 100%;
         .back{
