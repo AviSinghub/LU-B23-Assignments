@@ -2,9 +2,13 @@ import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
 import styled from 'styled-components'
 import backgroundImage from '../assets/home.jpg'
-import Movielogo from '../assets/homeTitle.webp' 
+import MovieLogo from '../assets/homeTitle.webp'
+import { FaPlay } from 'react-icons/fa' 
+import { useNavigate } from 'react-router-dom'
+import {AiOutlineInfoCircle} from 'react-icons/ai'
 
 function Netflix() {
+const navigate = useNavigate();
  const [isScrolled, setIsScrolled] = useState(false);
 
  window.onscroll = () => {
@@ -19,9 +23,77 @@ function Netflix() {
           src={backgroundImage}
           className='background-image' 
           alt="bgImage" />
+          <div className="container">
+            <img src={MovieLogo} alt="Movie title" />
+          
+            <div className="buttons flex">
+              <button
+              onClick={()=> navigate("/player")}
+              className ="flex j-center a-center" 
+              >
+                
+                <FaPlay/>
+                Play
+              </button>
+
+              <button className ="flex j-center a-center">
+                <AiOutlineInfoCircle/>
+                More info
+              </button>
+            </div>
+          </div>
       </div>
+
     </Container>
   )
 }
-const Container = styled.div``;
+const Container = styled.div`
+  background-container: black;
+  
+  .hero{
+    position:relative;
+    .background-image{
+      filter: brightness(60%);
+    }
+    img{
+      width:100%;
+      height: 100%;
+    }  
+    .container{
+      position: absolute;
+      bottom: 5rem;
+      margin-left:5rem;
+      .logo{
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }    
+  }
+  .buttons{
+    margin: 5em;
+    gap: 2rem;
+    button{
+      font-size: 1.4rem;
+      border-radius: 0.2rem;
+      padding: 0.5rem 2rem 0.5rem 2.4rem;
+      border: none;
+      cursor: pointer;
+      transition: 0.2s ease-in-out; 
+      &:hover{
+        opacity: 0.8;
+      }
+      &:nth-of-type(2){
+        background-color: rgba(109, 109, 110, 0.7) ;
+        color: white;
+        svg{
+          font-size: 1.8rem;
+
+        }
+
+      }
+    }
+  }
+`;
 export default Netflix;
