@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind</title>
+</head>
+<body class="text-gray-600">
+    <div class="grid md:grid-cols-3">
+
+        <div class="md:col-span-1 md:flex md:justify-end">
+            <nav class="text-right">
+                <div>
+                    <!-- <div class="flex ">
+                        <div class="bg-amber-500 h-4 w-6"></div>
+                        <div class="bg-amber-400 h-8 w-6"></div>
+                        <div class="bg-amber-300 h-14 w-4"></div>
+                    </div> -->
+
+                    <div class="flex justify-between items-center border-b border-amber-600 md:border-red-300 sm:border-amber-300">
+                       
+    
+                        <h1 class="text-amber-700 uppercase text-6xl  font-bold p-4 ">Games Hub</h1>
+                        <div class="px-4 cursor-pointer md:hidden" id="hamburger">
+                            <svg class="w-6 hover:text-amber-700" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"></path>
+                            </svg>
+                        </div>
+     
+                    </div>
+                    
+                    
+                    <ul class="text-gray-950 text-sm mt-6 hidden md:block" id="menu">
+                        <li class="p-1 pe-3 border-r-4 border-amber-800">
+                           
+                            <a href="#" class="hover:text-amber-400">Home  <svg class="inline-block w-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"></path>
+                              </svg></a>
+                        </li>
+                        <li class="p-1 pe-3  border-r-4 border-amber-300 hover:border-amber-600"><a href="#" class="hover:text-amber-400">About us 
+                            <svg class="inline-block w-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"></path>
+                          </svg></a></li>
+                        <li class="p-1 pe-3 border-r-4 border-amber-300 hover:border-amber-600"><a href="#" class="hover:text-amber-400">Contact
+                             <svg class="inline-block w-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"></path>
+                          </svg></a></li>
+                        <li class="p-1 pe-3 border-r-4 border-amber-300 hover:border-amber-600"><a href="#" class="hover:text-amber-400">Play Zone 
+                            <svg class="inline-block w-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 002.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 012.916.52 6.003 6.003 0 01-5.395 4.972m0 0a6.726 6.726 0 01-2.749 1.35m0 0a6.772 6.772 0 01-3.044 0"></path>
+                              </svg>
+                        </a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <main class="px-16 py-6 bg-amber-100 md:col-span-2">
+            <div class="flex justify-start sm:justify-end">
+                <a class="text-amber-700 py-2 px-3  uppercase font-bold text-xs cursor-pointer tracking-wider border-2 border-amber-700 rounded-full hover:bg-amber-700 hover:text-white" href="#">Login</a>
+                <a class="text-amber-700 ml-2 py-2 px-3 uppercase font-bold text-xs cursor-pointer tracking-wider border-2 border-amber-700 rounded-full hover:bg-amber-700 hover:text-white " href="#">Signup</a>
+            </div>
+
+            <header>
+                <h2 class="text-6xl text-amber-500 font-semibold">Game Type</h2>
+                <h3 class="text-2xl">Quick Plays</h3>
+            </header>
+
+            <div>
+                <h4 class=" text-amber-500 text-2xl font-bold mt-12 pb-2 border-b border-amber-500">Trending games</h4>
+                <div class="mt-8">
+                    <div class="card">
+                        <div class="bg-white rounded overflow-hidden shadow-md relative mt-4">
+                            <div>
+                                <img class="w-full h-32 sm:h-48 object-cover" src="assets/img/game-3.jpg" alt="chess">
+                            </div>
+                            <div class="m-4">
+                                <span class="font-bold">Chess Games Hubilti</span>
+                                <span class="block text-sm text-light italic">Built by Riot Gaming</span>
+                            </div>
+                            <!-- price tag starts  -->
+                            <div class="bg-amber-300 text-white-100 rounded-full p-2 absolute top-0 ml-3 mt-3 ">
+                                <span class="font-bold"> 
+                                    <svg class="w-5 inline-block  pb-1" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                     <path stroke-linecap="round" stroke-linejoin="round" d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg> 
+                                </span>
+                                <span>149</span>
+                            </div>
+                            <!-- price tag ends -->
+                            <!-- buy button  -->
+                            <div class=" cursor-pointer bg-amber-500 rounded absolute  bottom-5 right-6 px-2  pb-1 hover:bg-amber-300 hover:text-gray-700  ">
+                                <span class="p-2 m-1 justify-center">Buy</span>
+                            </div>
+                            <!-- buy button ends -->
+                        </div>
+                    </div>
+                </div>
+                <h4 class="text-amber-500 text-2xl font-bold mt-12 pb-2 border-b border-amber-500">Upcoming Games</h4>
+                <div class="mt-8 grid lg:grid-cols-3 gap-5">
+
+                    <div class="card hover:shadow-lg">
+                        <div class="bg-white rounded overflow-hidden shadow-md relative mt-4">
+                            <div>
+                                <img class="w-full h-32 sm:h-48 object-cover" src="assets/img/game-2.jpg" alt="chess">
+                            </div>
+                            <div class="m-4">
+                                <span class="font-bold">Card Games Splinter</span>
+                                <span class="block text-sm text-light italic">Built by Ramco Gaming</span>
+                            </div>
+                            <!-- price tag starts  -->
+                            <div class="bg-amber-300 text-white-100 rounded-full p-2 absolute top-0 ml-3 mt-3 ">
+                                <span class="font-bold">
+                                    <svg class="w-5 inline-block  pb-1" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                     <path stroke-linecap="round" stroke-linejoin="round" d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </span>
+                                <span>49</span>
+                            </div>
+                            <!-- price tag ends  -->
+
+                            <!-- buy button  -->
+                            <div class=" cursor-pointer overflow-hidden bg-amber-500 rounded absolute bottom-5 lg:right-2 md:bottom-5 right-6 px-1 pb-1 hover:bg-amber-300 hover:text-gray-700  ">
+                                <span class="p-2 m-1 justify-center text-xs ">Buy</span>
+                            </div>
+                            <!-- buy button ends -->
+                        </div>
+                    </div>
+
+                    <div class="card hover:shadow-lg">
+                        <div class="bg-white rounded overflow-hidden shadow-md relative mt-4">
+                            <div>
+                                <img class="w-full h-32 sm:h-48 object-cover" src="assets/img/game-3.jpg" alt="chess">
+                            </div>
+                            <div class="m-4">
+                                <span class="font-bold">Card Games Splinter</span>
+                                <span class="block text-sm text-light italic">Built by Ramco Gaming</span>
+                            </div>
+                            <!-- price tag starts  -->
+                            <div class="bg-amber-300 text-white-100 rounded-full p-2 absolute top-0 ml-3 mt-3 ">
+                                <span class="font-bold">
+                                    <svg class="w-5 inline-block  pb-1" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                     <path stroke-linecap="round" stroke-linejoin="round" d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </span>
+                                <span>29</span>
+                            </div>
+                            <!-- price tag ends  -->
+                            <!-- buy button  -->
+                            <div class=" cursor-pointer overflow-hidden bg-amber-500 rounded absolute bottom-5 lg:right-2 md:bottom-5 right-6 px-1 pb-1 hover:bg-amber-300 hover:text-gray-700  ">
+                                <span class="p-2 m-1 justify-center text-xs ">Buy</span>
+                            </div>
+                            <!-- buy button ends -->
+                        </div>
+                    </div>
+
+                    <div class="card hover:shadow-lg">
+                        <div class="bg-white rounded overflow-hidden shadow-md relative mt-4">
+                            <div>
+                                <img class="w-full h-32 sm:h-48 object-cover" src="assets/img/game-3.jpg" alt="chess">
+                            </div>
+                            <div class="m-4">
+                                <span class="font-bold">Card Games Splinter</span>
+                                <span class="block text-sm text-light italic">Built by Ramco Gaming</span>
+                            </div>
+                            <!-- price tag starts  -->
+                            <div class="bg-amber-300 text-white-100 rounded-full p-2 absolute top-0 ml-3 mt-3 ">
+                                <span class="font-bold">
+                                    <svg class="w-5 inline-block  pb-1" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                     <path stroke-linecap="round" stroke-linejoin="round" d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg></span>
+                                <span>19</span>
+                            </div>
+                            <!-- price tag ends  -->
+                            <!-- buy button  -->
+                            <div class=" cursor-pointer overflow-hidden bg-amber-500 rounded absolute bottom-5 lg:right-2 md:bottom-5 right-6 px-1 pb-1 hover:bg-amber-300 hover:text-gray-700  ">
+                                <span class="p-2 m-1 justify-center text-xs ">Buy</span>
+                            </div>
+                            <!-- buy button ends -->
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <div>Load more games...</div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
