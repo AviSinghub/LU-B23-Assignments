@@ -1,0 +1,18 @@
+#grid{
+    margin: 10px 0 0 50px;
+    display: flex;
+    width:300px;
+    height: 200px;
+    flex-wrap:wrap;
+}
+
+body{
+
+    background-color: rgb(157, 223, 223);
+
+}
+
+.food1 , .Score{
+    margin-left:50px;
+    color: rgba(235, 69, 91, 0.911);
+}
