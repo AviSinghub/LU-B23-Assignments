@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: rgb(150, 33, 57);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbar{
+  display:flex;
+  align-items: center;
+  max-width: 100vw;
+  margin: 0 auto;
+  border-bottom: 1px solid grey ;
+  padding: 10px;
+  background-color: rgb(71, 245, 245);
+}
+.navbar h1{
+  color: rgba(136, 46, 172, 0.836);
+}
+
+.navbar .links{
+  margin-left: auto;
+}
+
+.navbar a{
+  text-decoration: none;
+  margin-left: 15px;
+  padding: 7px;
+}
+
+.navbar a:hover{
+  color: red;
+  border: 1px transparent rgb(221, 218, 218);
+  border-radius: 1em;
+  /* background-color: rgb(221, 218, 218); */
+  background-color: rgb(59, 228, 228);
+  
+}
+
+.btn{
+  margin-left: 20px;
+  padding: 8px 8px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(33, 190, 211);
+  border:1px solid blue;
+  border-radius: 14px;
+}
+
+/* blog-preview */
+.blog-preview{
+  padding: 7px 14px;
+  margin: 15px 3px;
+  border-bottom: 1px solid rgb(188, 212, 151);
+}
+
+.blog-preview:hover{
+  box-shadow: 1px 4px 12px 4px rgba(170, 154, 177, 0.836);
+  background-color:#c5e9eb;
+}
+ .blog-preview h2{
+  color: green;
+}
+.blog-preview .authr{
+  color: cadetblue;
+  font-weight: 500;
+}
+.blog-preview .timeline{
+  color: rgb(99, 136, 138);
+}
+
+/* Tech Glimpse  */
+.tit{
+  color:rgb(46, 121, 98);
+  margin: 10px 0 10px 9px;
+}
+
+/* sorted colums  */
+.sorted{
+  font-size: 12px;
+  border: 0px solid rgb(231, 190, 190);
+  border-radius: 1em;
+  margin: 0px 120px 0px 10px;
+  padding: 0 12px 0px 12px;
+  color: rgb(65, 59, 59);
+}
+
+.blog-list{
+  margin-bottom: 40px;
+}
+
+/* button here */
+.btn{
+  margin-bottom: 20px;
+  background-color: rgb(38, 140, 158);
+  padding:8px; 
+}
