@@ -14,16 +14,22 @@ const Category = () => {
         {title:"The Division 2", preview: "Most active game", body:"Action to the best of the best game in the following year.",category:"Action", author:"Blair",time:"49 mins ago" , id: "19" },
         {title:"Saint Rows", preview: "Most active game", body:"Action to the best of the best game in the following year.",category:"OpenWorld", author:"Samson",time:"52 mins ago" , id: "20" },
         {title:"GTA V", preview: "Most active game", body:"Action to the best of the best game in the following year.",category:"OpenWorld", author:"Nehal",time:"59 mins ago" , id: "21" },
-    ])
+    ]);
+
+    const deleteBlog = (id) => {
+        const newBlogs = cblogs.filter( cblogs => cblogs.id!==id);
+        setCblogs(newBlogs);
+    }
+
     return ( 
         <div className="home">
             {/* with props  */}
-            <CblogList cblogs = {cblogs} title ="Trending now" />
+            <CblogList cblogs = {cblogs} title ="Trending now" deleteBlog={deleteBlog}/>
             <div className="sorted">
                 <h1>Sorted by</h1>
-                <CblogList cblogs = {cblogs.filter((sortblog) =>sortblog.category === "Action")} m_title="Action"/>
-                <CblogList cblogs = {cblogs.filter((sortblog)=>sortblog.category === "PvP")} m_title= "PvP"/>
-                <CblogList cblogs = {cblogs.filter((sortblog) => sortblog.category === "Racing")} m_title="Racing" />
+                <CblogList cblogs = {cblogs.filter((sortblog) =>sortblog.category === "Action")} m_title="Action" deleteBlog={deleteBlog}/>
+                <CblogList cblogs = {cblogs.filter((sortblog)=>sortblog.category === "PvP")} m_title= "PvP" deleteBlog={deleteBlog}/>
+                <CblogList cblogs = {cblogs.filter((sortblog) => sortblog.category === "Racing")} m_title="Racing" deleteBlog={deleteBlog} />
             </div>
 
         </div>

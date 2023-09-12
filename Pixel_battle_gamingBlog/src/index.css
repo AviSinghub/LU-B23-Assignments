@@ -41,7 +41,6 @@ code {
   color: red;
   border: 1px transparent rgb(221, 218, 218);
   border-radius: 1em;
-  /* background-color: rgb(221, 218, 218); */
   background-color: rgb(59, 228, 228);
   
 }
@@ -102,4 +101,42 @@ code {
   margin-bottom: 20px;
   background-color: rgb(38, 140, 158);
   padding:8px; 
+}
+
+
+/* after part on delete button implement styles to them */
+.mainup{
+  display:inline-flex;
+}
+
+/* react componet icon delete */
+.btnD{
+  background-color: rgb(210, 227, 231);
+  border: none;
+  border-radius: 48%;
+  cursor: pointer;
+}
+.icon{
+  padding-top: 1px;
+  border: none;
+  font-size: larger;
+  height: 20px;
+  width: 24px;
+  color:rgb(212, 115, 115);
+  fill: rgb(14, 133, 14);
+}
+
+/* hovering  */
+.btnD:hover .icon{
+  /* background-color: rgb(236, 116, 95); */
+  fill: rgb(252, 0, 0);
+}
+.btnD:hover{
+  background-color: #f8d7da ;
+}
+
+.mainup .btnD{
+  margin:20px 0px 20px 70px;
+  justify-content: center;
+  align-items: center;
 }
