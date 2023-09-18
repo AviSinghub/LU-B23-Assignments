@@ -5,8 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  color: rgb(150, 33, 57);
+  
+  color: rgb(91, 94, 92);
 }
 
 code {
@@ -119,4 +119,47 @@ code {
   justify-content: center;
   align-items: center;
 }
+
+/* loading page styles  */
+
+.progress{
+  box-sizing: border-box;
+  /* margin-bottom: 50px; */
+  left: 50%;
+  top: 17%;
+  position: absolute;
+  /* position: relative; */
+  background-color: #f3efef;
+  transform: translate(-50%,-50%);
+  height: 14px;
+  width: 650px;
+  border: 2px solid #e7bb96;
+  border-radius: 15px;
+}
+.progress .color{
+  position: absolute;
+  background-color: #33a7f5;
+  width: 0px;
+  height: 10px;
+  border-radius: 15px;
+  animation: progres 759ms infinite linear;    
+}
+@keyframes progres{
+  0%{
+    width: 0%;
+  }
+  25%{
+      width: 50%;
+  }
+  50%{
+      width: 80%;
+  }
+  75%{
+      width: 85%;
+  }
+  100%{
+      width: 100%;
+  }
+};
+
 

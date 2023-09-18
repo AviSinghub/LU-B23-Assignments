@@ -1,6 +1,7 @@
 // import {useEffect, useState} from 'react';
 import React from 'react';
 import BlogList from './BlogList';
+import Loading from './Loading';
 import useCustomFetch from './customFetch';
 
 const Homepage = () => {
@@ -72,7 +73,7 @@ const Homepage = () => {
             {isError && <div>{isError}</div> }
 
             {/* conditional templationg for fetch status */}
-            {isFetchPending && <div>loading...</div> }
+            {isFetchPending && <div> <Loading/></div> }
 
 
             {/* conditional templating  */}

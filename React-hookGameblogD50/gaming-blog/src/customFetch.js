@@ -30,11 +30,11 @@ const useCustomFetch = (url) => {
                         console.log(err.message);
                     }
                 )
-            },2000
+            },780
         );
     },[url]);
     
-    return (datas,isFetchPending,isError);
+    return {datas,isFetchPending,isError};
 }
  
 export default useCustomFetch;
