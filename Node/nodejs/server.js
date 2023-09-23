@@ -20,7 +20,11 @@ const server = http.createServer( (req,res) =>{
         case '/teams':
             path += 'teams.html'
             console.log(`This page is now live:${path}`);
-            break;    
+            break;
+        case '/community' :
+            path += 'community.html';
+            console.log(`The page is live on screen: ${path}`);
+            break;       
         default:
             path += '404.html'
             break;        
